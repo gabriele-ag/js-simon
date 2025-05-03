@@ -53,7 +53,7 @@ function startGame(event) {
     
     // Creo il timer
 
-    let count = 30;
+    let count = 1;
 
     const intervalID = setInterval(function() {
         if (count === 0) {
@@ -99,6 +99,7 @@ function endGame(event) {
     // Definisco condizione per il gli input del giocatore
     const playerNumbers = [firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber]
     let correct = 0
+    console.log(playerNumbers)
 
     for (let i = 0; i < randomNumbers.length; i++) {
         if (playerNumbers.includes(String(randomNumbers[i]))) {
@@ -135,7 +136,7 @@ function resetGame(event) {
     buttonConfirmed.style.display = "none";
     buttonStart.style.display = "block";
     randomNumbers.length = 0
-
+    
 }
 
 
