@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 
 <body>
     <!-- Nome del gioco, spiegazione e contatore tempo rimasto -->
     <header>
-        <h1>Simon Says</h1>
-        <p>Inserisci tutti i numeri che ricordi (l'ordine non è importante)</p>
+        <h1 class="txt-center my-30">Simon Says</h1>
+        <p class="txt-center my-10 ">Inserisci tutti i numeri che ricordi (l'ordine non è importante)</p>
         <div>
-            <p id="numRandom"></p>
-            <p>Timer: </p>
-            <p id="contatore">30</p>
+            <p id="numRandom" class="my-30 txt-center bold"></p>
+            <p class="my-10 txt-center">Timer: </p>
+            <p id="contatore" class="my-10 txt-center">30</p>
         </div>
     </header>
     <!-- /Nome del gioco, spiegazione e contatore tempo rimasto -->
@@ -23,8 +24,8 @@
     <!-- Main -->
     <main>
         <!-- Box con input giocatore -->
-        <div id="inputGiocatore">
-            <form>
+        <div id="inputGiocatore" class="my-10">
+            <form class="flex j-content-center al-items-center wrap container">
                 <label for="casella1"></label>
                 <input type="number" id="casella1" name="casella1" placeholder="Numero 1">
                 
@@ -45,9 +46,11 @@
         <!-- /Box con input giocatore -->
 
         <!-- Pulsanti per il gioco -->
-        <button id="inizia">Inizia</button>
-        <button id="conferma">Conferma</button>
-        <button id="reset">Reset</button>
+        <div class="flex j-content-center">
+        <button id="inizia" class="my-10">Inizia</button>
+        <button id="conferma" class="my-10">Conferma</button>
+        <button id="reset" class="my-10">Reset</button>
+        </div>
         <!-- /Pulsanti per il gioco -->
 
 
@@ -57,7 +60,8 @@
     <!-- Footer -->
     <footer>
         <div>
-            <p id="risultato"></p>
+            <h3 class="my-30 txt-center">Risultato</h3>
+            <p id="risultato" class="my-10 txt-center"></p>
         </div>
     </footer>
     <!-- /Footer -->
