@@ -53,7 +53,7 @@ function startGame(event) {
     
     // Creo il timer
 
-    let count = 30;
+    let count = 1;
 
     const intervalID = setInterval(function() {
         if (count === 0) {
